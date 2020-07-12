@@ -22,4 +22,14 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
     }
+    /** Called when the user taps the Send message via button */
+    public void sendMessageVia(View v) {
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("text/plan");
+        EditText editText = (EditText)findViewById(R.id.editText);
+        String message = editText.getText().toString();
+        intent.putExtra(Intent.EXTRA_TEXT, message);
+        Intent chooseIntent = Intent.createChooser(intent, "Send message via..");
+        startActivity(chooseIntent);
+    }
 }
