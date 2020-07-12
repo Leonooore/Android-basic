@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Ресурсы</string>
+    <string name="hello">Привет! Это вторая активити</string>
+    <string name="back">Вернуться</string>
+    <string name="next">Вперед ко второй активити</string>
+</resources>
