@@ -1,6 +1,9 @@
 package com.gmail.elnora.fet.nextbackapp;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -24,15 +27,20 @@ public class MainActivity extends AppCompatActivity {
 
     private void startSecondActivity() {
         Intent intent = new Intent(this, SecondActivity.class);
-//        int a = 2;
-//        int b = 5;
-//        intent.putExtra("KEY_A", a);
-//        intent.putExtra("KEY_B", b);
-//        int result = a*b;
-//        setResult(Activity.RESULT_OK, intent.putExtra("result", result));
-//        startActivityForResult(intent, 18000);
+        int a = 2;
+        int b = 5;
+        intent.putExtra("KEY_A", a);
+        intent.putExtra("KEY_B", b);
+        startActivityForResult(intent, 18000);
+    }
 
-        startActivity(intent);
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        if (requestCode == 18000 && resultCode == Activity.RESULT_OK && data != null) {
+            int result = data.getIntExtra("RESULT", 0);
+            Log.d("MainActivity", "onActivityResult: " + result);
+        }
+        super.onActivityResult(requestCode, resultCode, data);
     }
 
     @Override
