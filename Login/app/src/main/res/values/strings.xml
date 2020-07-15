@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Login</string>
+    <string name="password_login">Password</string>
+    <string name="name_login">Name</string>
+    <string name="button_login">LOGIN</string>
+    <string name="text_info">No of incorrect attempts</string>
+    <string name="text_second_activity">This is second activity</string>
 </resources>
