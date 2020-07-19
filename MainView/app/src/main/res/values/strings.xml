@@ -2,4 +2,6 @@
     <string name="app_name">MainView</string>
     <string name="text_hello">Hello</string>
     <string name="text_framelayout">FrameLayout</string>
+    <string name="text_linearlayout">LinearLayout</string>
+    <string name="text_tablelayout">TableLayout</string>
 </resources>
