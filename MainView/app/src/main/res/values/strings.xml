@@ -6,4 +6,5 @@
     <string name="text_tablelayout">TableLayout</string>
     <string name="text_relativelayout">Hi my team!</string>
     <string name="button_relativelayout">Say Hello</string>
+    <string name="text_constraintlayout">ConstraintLayout</string>
 </resources>
