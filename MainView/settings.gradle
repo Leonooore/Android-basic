@@ -1,4 +1,2 @@
-include ':test2'
-include ':test'
 include ':app'
 rootProject.name = "MainView"
