@@ -28,7 +28,7 @@ public class DrinksActivity extends AppCompatActivity {
 
         SQLiteOpenHelper starbuzzDatabaseHelper = new CafeGoDatabaseHelper(this);
         try {
-            SQLiteDatabase db = starbuzzDatabaseHelper.getReadableDatabase();
+            db = starbuzzDatabaseHelper.getReadableDatabase();
             cursor = db.query("DRINK",
                     new String[]{"_id", "NAME"},
                     null, null, null, null, null);
