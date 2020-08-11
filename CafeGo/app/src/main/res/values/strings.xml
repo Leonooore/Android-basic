@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">CafeGo</string>
+    <string name="cafe_logo">Logo</string>
+    <string-array name="cafe_options">
+        <item>Drinks</item>
+        <item>Food</item>
+        <item>Stores</item>
+    </string-array>
 </resources>
